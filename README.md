@@ -27,7 +27,7 @@ To get started, follow these steps:
 
 ```
 
-4. Start the NodeJS server:
+4. Start the Node.js server:
 
 ```bash
   node server.js
