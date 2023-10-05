@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  font-family: monospace;
+  color: #020288;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
+
+input[type="number"],
+select {
+  padding: 8px;
+  margin: 4px 0;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  max-width: 324.15px;
+}
+
+#convertButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #bca2d4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#convertButton:hover {
+  background-color: #c6abdf;
+}
+
+#exchangeRateInfo {
+  margin-top: 20px;
+  color: #666;
+}
+
+#resultContainer {
+  margin-top: 20px;
+  font-weight: bold;
+  line-height: 2.5;
+}
+
+#currencySelect {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+}
+
+#currencySelect option {
+  padding: 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+#currencySelect:hover {
+  background-color: #ddd;
+}
+
+#currencySelect:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #666;
+  pointer-events: none;
+}
+
+#currencySelect.opened:after {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+#currencySelect option:hover {
+  background-color: #814481;
+  color: #fff;
+}
