@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Make a request to the server's endpoint
     fetch(
-      `http://localhost:3008/convert?amount=${amountTotal}&currency=${currencyTotal}`
+      `https://currency-exchange-kappa-swart.vercel.app/convert?amount=${amountTotal}&currency=${currencyTotal}`
     )
       .then((response) => response.json())
       .then((data) => {
