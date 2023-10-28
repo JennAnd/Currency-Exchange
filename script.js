@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Make a request to the server's endpoint
     fetch(
+      // // lokalt ändra till `http://localhost:3008/convert?amount=${amountTotal}&currency=${currencyTotal}`
       `https://currency-exchanger-server-d0e77f0a0448.herokuapp.com/convert?amount=${amountTotal}&currency=${currencyTotal}`
     )
       .then((response) => response.json())
