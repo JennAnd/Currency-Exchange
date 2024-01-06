@@ -15,7 +15,7 @@ app.get("/convert", async (req, res) => {
   const currencyTotal = req.query.currency;
 
   const apiKey = process.env.API_KEY;
-  const apiUrl = "https://api.api-ninjas.com/v1/exchangerate?pair=SEK_";
+  const apiUrl = "https://api.api-ninjas.com/v1/exchangerate?pair=EUR_";
 
   // Make a request to API to fetch the exchange rate for the selected currency
   fetch(`${apiUrl}${currencyTotal}`, {

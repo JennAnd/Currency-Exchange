@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to hide the loader and show the button text
   const hideLoader = () => {
-    convert.innerText = "Convert to SEK";
+    convert.innerText = "Convert to EUR";
     convert.disabled = false;
   };
 
@@ -33,12 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Display "Result" in bold before the result
     result.innerHTML = `RESULT<br>${amountTotal} ${currencyTotal} = ${resultPrice.toFixed(
       2
-    )} SEK`;
+    )} EUR`;
 
     // Display the exchange rate calculation
     exchangeRateInfo.innerHTML = `1 ${currencyTotal} = ${(1 / rate).toFixed(
       4
-    )} SEK`;
+    )} EUR`;
   };
 
   // Event listener for the "Convert" button click
